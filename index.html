@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodrigue Ndzana N.B Full Stack Developer</title>
+<meta name="description" content="Rodrigue Ndzana - Full Stack Developer & Web Designer based in Cape Town, South Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Apply saved theme before first paint to avoid a flash of the wrong theme.
+  (function(){
+    try{
+      if(localStorage.getItem('rn_theme') === 'light'){
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    }catch(e){}
+  })();
+</script>
+</head>
+<body>
+
+<div class="loading-screen" id="loadingScreen" role="status" aria-live="polite">
+  <div class="loading-card">
+    <div class="loading-spinner">
+      <img src="images/king-teutonic-mark.png" alt="King Teutonic" class="loading-logo">
+    </div>
+    <p class="loading-text">Welcome To My Portfolio...</p>
+  </div>
+</div>
+
+<header>
+  <nav class="nav">
+    <a href="#home" class="logo"><img src="images/king-teutonic-mark.png" alt="" class="logo-mark"><span class="dot">&gt;</span>rodrigue<span class="dot">_</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"></path></svg>
+      </button>
+      <button class="btn btn-ghost btn-sm" id="openLogin" aria-haspopup="dialog">Client sign in</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">--</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow-line">Available for freelance & full-time roles</div>
+        <h1>Rodrigue Ndzana builds <em>full&#8209;stack</em> products, end to end.</h1>
+        <p class="hero-lede">Full stack developer and web designer in Cape Town, South Africa - I take products from interface to database, across React, Node.js, Java and C#.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="heroDownloadCv">Download CV</button>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>Cape Town, ZA</strong>based & remote-friendly</div>
+          <div><strong>French - English - German </strong>working languages</div>
+          <div><strong>Open to work</strong>freelance or full-time</div>
+        </div>
+      </div>
+
+      <div class="editor">
+        <div class="editor-bar">
+          <span class="traffic t-red"></span>
+          <span class="traffic t-amber"></span>
+          <span class="traffic t-green"></span>
+          <span class="editor-filename">about-me.js</span>
+        </div>
+        <div class="editor-body" id="typedCode"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section-border" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">01 - About</div>
+          <h2>A developer who also thinks like a designer.</h2>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I'm a multidisciplinary technology professional working across web design, full-stack development, and software engineering. My path started in 2019 with a foundational course at the College of Cape Town, and continued through a diploma program at Cape Peninsula University of Technology - where I've built a solid base in Java, C#, Scala, and modern web technologies.</p>
+          <p>As a web designer, I focus on responsive, user-centred interfaces that hold up across devices. As a full stack developer, I handle the complete build - React front ends, Node.js and Express back ends, and SQL or NoSQL data layers. I care about clean code and interfaces that don't get in the user's way.</p>
+          <p>I'm comfortable moving between the visual and the technical, and I enjoy the parts of a project where those two sides meet.</p>
+        </div>
+        <div class="fact-list">
+          <div><span>Full name</span><span class="val">Rodrigue Ngonga Ndzana Beaubane</span></div>
+          <div><span>Based in</span><span class="val">Cape Town, South Africa</span></div>
+          <div><span>Nationality</span><span class="val">Cameroonian</span></div>
+          <div><span>Education</span><span class="val">National & Advanced Diploma, ICT</span></div>
+          <div><span>Languages</span><span class="val">French, English, German</span></div>
+          <div><span>Availability</span><span class="val">Open to freelance & full-time</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section-border" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">02 - Skills</div>
+          <h2>Where I spend my time.</h2>
+        </div>
+        <p>A working snapshot of my current strengths - not a ceiling, a starting point.</p>
+      </div>
+      <div class="skills" id="skillsGrid">
+        <div class="skill-row" data-level="90">
+          <div class="skill-top"><span>Teamwork & collaboration</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-level="89">
+          <div class="skill-top"><span>Problem solving</span><span>89%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-level="86">
+          <div class="skill-top"><span>Web design</span><span>86%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-level="86">
+          <div class="skill-top"><span>JavaScript</span><span>86%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-level="80">
+          <div class="skill-top"><span>Digital literacy</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+        <div class="skill-row" data-level="76">
+          <div class="skill-top"><span>C#.NET, Java & Scala</span><span>76%</span></div>
+          <div class="skill-track"><div class="skill-fill"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE / EDUCATION ============ -->
+  <section class="section-border" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">03 - Experience & education</div>
+          <h2>How I got here.</h2>
+        </div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">2024-2025</div>
+          <h3>Advanced Diploma in Information Communication Technology</h3>
+          <div class="tl-org">Cape Peninsula University of Technology, South Africa</div>
+          <p>Advanced coursework in software architecture, cloud computing, mobile app development, and secure coding - applied through industry-aligned projects.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2020 - 2024</div>
+          <h3>National Diploma in Information Communication and Technology</h3>
+          <div class="tl-org">Cape Peninsula University of Technology, South Africa</div>
+          <p>Core training in Java, Scala, C#, database management, and systems analysis, with hands-on projects and Work-Integrated Learning.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2019-2020</div>
+          <h3>Coding Instructor, Africa Code Week</h3>
+          <div class="tl-org">Cape Town, South Africa</div>
+          <p>Part of a team that trained roughly 8,300 children in foundational coding skills - designing lessons and building confidence in young learners.</p>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">2019-2020</div>
+          <h3>Microsoft Web Developer Course</h3>
+          <div class="tl-org">College of Cape Town, South Africa</div>
+          <p>Foundational program covering C#.NET, database fundamentals, and web design - the starting point of my development career.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section-border">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">04 - Services</div>
+          <h2>What I can build for you.</h2>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="service-mark">01</div>
+          <h3>App development</h3>
+          <p>End-to-end application builds using Java, C#.NET, and modern frameworks - from interface through to backend logic and database integration.</p>
+        </div>
+        <div class="service">
+          <div class="service-mark">02</div>
+          <h3>Web development</h3>
+          <p>Responsive, interactive web applications built with HTML5, CSS3, JavaScript, and React, backed by SQL or MongoDB.</p>
+        </div>
+        <div class="service">
+          <div class="service-mark">03</div>
+          <h3>Graphic design</h3>
+          <p>Logos, brand systems, and UI elements designed with attention to typography, colour, and layout - in Photoshop, Illustrator, and Figma.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section-border" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">05 - Projects</div>
+          <h2>Selected work.</h2>
+        </div>
+        <p>Swap these in for your live repos and case studies - placeholders are marked below.</p>
+      </div>
+      <div class="projects">
+        <div class="project-card">
+          <div class="project-thumb project-thumb-image">
+            <img src="images/tictoegame.png" alt="tic-toe-game-ruddy" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Web app</span>
+            <h3>Tic Toe Game</h3>
+            <p>A sleek, modern Tic-Tac-Toe game built with pure HTML, CSS, and JavaScript , no frameworks, no dependencies.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="https://tic-toe-game-ruddy.vercel.app" class="project-link" target="_blank" rel="noopener">View live demo...</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            Word-document-Question Answer, 
+          </div>
+          <div class="project-body">
+            <span class="project-tag">Application</span>
+            <h3>Transformer Question & Answer System in Rust + Burn</h3>
+            <p>A complete machine-learning pipeline that reads .docx documents and answers natural language questions about them, built with Rust and the Burn deep-learning framework.</p>
+            <div class="tech-tags"><span>Rust</span><span>Burn deep machine-learning</span></div>
+            <button type="button" class="project-link project-inquire" data-project="Word-document-Question Answer, Transformer Question & Answer System in Rust + Burn ">Ask about this project ... Source code</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">TV Show DOM Project</div>
+          <div class="project-body">
+            <span class="project-tag">Web Application</span>
+            <h3>Mobile app landing page <em style="font-style:normal;color:var(--text-faint);font-size:12px;">(placeholder)</em></h3>
+            <p>Web app using HTML, CSS, and JavaScript which shows details of all of the episodes of a TV show.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a href="cyf-rodriguendzana-tv.netlify.app" class="project-link"target="_blank" rel="noopener">View live demo...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT ACCESS (LOGIN DEMO) ============ -->
+  <section class="section-border" id="clientAccess">
+    <div class="wrap">
+      <div class="access-panel">
+        <div>
+          <h2>Client access area</h2>
+          <p id="accessCopy">Sign in to download my CV and unlock this private area - the same authentication pattern I build into full-stack projects.</p>
+          <div class="hero-actions" style="margin-top:20px;">
+            <button class="btn btn-primary" id="openLogin2">Sign in / Create account</button>
+            <button class="btn btn-ghost" id="manageAccountBtn" style="display:none;">Manage account</button>
+            <button class="btn btn-ghost" id="logoutBtn" style="display:none;">Sign out</button>
+          </div>
+        </div>
+        <div class="access-status" id="accessStatus">
+          <div class="avatar" id="accessAvatar"> - </div>
+          <div>
+            <div id="accessName">-</div>
+            <div style="color:var(--text-faint); font-size:12px;">Signed in</div>
+          </div>
+        </div>
+      </div>
+      <div id="privatePanel" style="display:none; margin-top:24px; border:1px solid var(--border); border-radius:var(--radius); padding:28px; background:var(--bg-card);">
+        <div class="kicker" style="margin-bottom:14px;">Private - visible only when signed in</div>
+        <p id="privateNote" style="color:var(--text-muted); font-size:15px; margin-bottom:20px; max-width:56ch;">Thanks for taking the time to look around, <span id="privateName">there</span> - it means a lot. Grab the CV below whenever you're ready, and if anything here catches your eye, I'd love to hear from you.</p>
+        <div class="hero-actions">
+          <a href="images/Rodrigue-CV.pdf" class="btn btn-primary btn-sm" id="privateDownloadCv" target="_blank" rel="noopener">Download full CV</a>
+          <button class="btn btn-ghost btn-sm" id="manageAccountBtn2">Manage account</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="kicker">06 - Contact</div>
+          <h2>Let's build something.</h2>
+        </div>
+        <p>Open to freelance projects and full-time roles - I usually reply within a day.</p>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-list">
+            <div><span class="ic">Phone</span><a href="tel:+27679016706">+27 67 901 6706</a></div>
+            <div><span class="ic">Email</span><a href="mailto:ndzanarodrigue6@gmail.com">ndzanarodrigue6@gmail.com</a></div>
+            <div><span class="ic">Location</span><span class="val">Cape Town, South Africa</span></div>
+            <div><span class="ic">Status</span><span class="val">Open to work</span></div>
+          </div>
+          <div class="social-row">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="GitHub">gh</a>
+            <a href="http://wa.me/27679016706" aria-label="WhatsApp">wa</a>
+          </div>
+        </div>
+        <form id="contactForm" novalidate>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+            <div class="field" id="nameField">
+              <label for="cname">Name</label>
+              <input type="text" id="cname" name="name">
+              <div class="field-error">Please enter your name.</div>
+            </div>
+            <div class="field" id="emailField">
+              <label for="cemail">Email</label>
+              <input type="email" id="cemail" name="email">
+              <div class="field-error">Please enter a valid email.</div>
+            </div>
+          </div>
+          <div class="field" id="subjectField">
+            <label for="csubject">Subject</label>
+            <input type="text" id="csubject" name="subject">
+            <div class="field-error">Subject can't be blank.</div>
+          </div>
+          <div class="field" id="messageField">
+            <label for="cmessage">Message</label>
+            <textarea id="cmessage" name="message"></textarea>
+            <div class="field-error">Please add a short message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="contactSubmitBtn">Send message</button>
+          <p class="form-note" id="formNote">Messages are sent straight to Rodrigue's inbox.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-brand"><img src="images/king-teutonic-mark.png" alt="" class="logo-mark"> &copy; <span id="year"></span> Rodrigue Ndzana. Built with HTML, CSS & JavaScript.</p>
+    <p>Cape Town, South Africa</p>
+  </div>
+</footer>
+
+<!-- ============ LOGIN MODAL ============ -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <h3 id="modalTitle">Client access</h3>
+    <p class="modal-sub">Sign in to view private notes, or create an account.</p>
+
+    <div class="modal-tabs">
+      <button class="modal-tab active" data-tab="signin">Sign in</button>
+      <button class="modal-tab" data-tab="signup">Create account</button>
+    </div>
+
+    <div class="modal-msg" id="modalMsg"></div>
+
+    <form class="modal-form active" id="signinForm">
+      <div class="field">
+        <label for="siEmail">Email</label>
+        <input type="email" id="siEmail" required>
+      </div>
+      <div class="field">
+        <label for="siPassword">Password</label>
+        <input type="password" id="siPassword" required minlength="4">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+    </form>
+
+    <form class="modal-form" id="signupForm">
+      <div class="field">
+        <label for="suName">Name</label>
+        <input type="text" id="suName" required>
+      </div>
+      <div class="field">
+        <label for="suEmail">Email</label>
+        <input type="email" id="suEmail" required>
+      </div>
+      <div class="field">
+        <label for="suPassword">Password</label>
+        <input type="password" id="suPassword" required minlength="4">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Create account</button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ MANAGE ACCOUNT MODAL ============ -->
+<div class="modal-overlay" id="manageOverlay" role="dialog" aria-modal="true" aria-labelledby="manageTitle">
+  <div class="modal">
+    <button class="modal-close" id="manageClose" aria-label="Close">&times;</button>
+    <h3 id="manageTitle">Manage account</h3>
+    <p class="modal-sub">Update your details, or remove your account entirely.</p>
+
+    <div class="modal-msg" id="manageMsg"></div>
+
+    <form id="manageForm">
+      <div class="field">
+        <label for="mgName">Name</label>
+        <input type="text" id="mgName" required>
+      </div>
+      <div class="field">
+        <label for="mgEmail">Email</label>
+        <input type="email" id="mgEmail" required>
+      </div>
+      <div class="field">
+        <label for="mgPassword">New password</label>
+        <input type="password" id="mgPassword" placeholder="Leave blank to keep current password" minlength="4">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Save changes</button>
+    </form>
+
+    <div class="danger-zone">
+      <div class="danger-zone-label">Danger zone</div>
+      <p>Deleting your account removes it from this browser's storage. You'll need to create a new account to sign in again.</p>
+      <button class="btn btn-danger btn-block" id="deleteAccountBtn">Delete my account</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
