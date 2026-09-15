@@ -7,7 +7,7 @@
     ADMIN_EMAIL: 'ndzanarodrigue6@gmail.com'
   };
 
-  const CV_PATH = 'images/Rodrigue-CV.pdf';
+  const CV_PATH = 'images/Rodrigue_Ndzana_CV.pdf';
 
   // ---- Loading screen ----
   const loadingScreen = document.getElementById('loadingScreen');
