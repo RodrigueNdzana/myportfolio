@@ -3,7 +3,7 @@
   // CONFIGURATION OF THE EMAIL SECTION USING https://formspree.io
   // =========================================================
   const CONFIG = {
-    FORMSPREE_ENDPOINT: 'https://formspree.io/f/your-form-id',
+    FORMSPREE_ENDPOINT: 'https://formspree.io/f/xppwdkaz',
     ADMIN_EMAIL: 'ndzanarodrigue6@gmail.com'
   };
 
